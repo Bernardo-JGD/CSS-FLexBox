@@ -1,0 +1,71 @@
+body{
+    background: #E9E9E9;
+}
+
+.contenedor{
+    width: 500px;
+    height: 200px;
+    background: #fff;
+    padding: 10px;
+    border: 10px solid #2C3E50;
+    margin: 20px;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    /* flex-direction: row; */
+    /*row: posiciona los elementos en fila, uno detras de otro de manera horizontal de izquierda a derecha*/
+    /*1 2 3 4*/
+    /*row-reverse: posiciona los elementos en fila, uno detras de otro de manera horizontal de derecha a izquierda*/
+    /*4 3 2 1*/
+    /*column: posiciona los elementos en una sola columna, de arriba a abajo uno detras de otro*/
+    /*
+    1
+    2
+    3
+    4
+    */
+    /*column-reverse: posiciona los elementos en una sola columna, de abajo a arriba uno detras de otro*/
+    /*
+    4
+    3
+    2
+    1
+    */
+
+    /* flex-wrap: wrap; */
+
+    /*no-wrap: deja todo como está*//*Si agrego más elementos será sobre la misma fila
+     pero para que quepan, su ancho (width) será más pequeño, así que si está definido
+     el ancho, no se respetará*/
+    /*wrap: Si el elemento no cabe en la misma fila al final, lo agrega en la siguiente*/
+    /*1 2*/
+    /*3 4*/
+    /*wrap-reverse invierte el orden de wrap*/
+    /*3 4*/
+    /*1 2*/
+
+    /* flex-flow: row wrap */
+    /*flex-flow puede contener los valores que reciben flex-direction y flex-wrap*/
+
+    justify-content: space-between;
+    /*flex-end: agrega los elmentos hacia la derecha sin alterar su orden: ----1234*/
+    /*center: agrega los elementos desde el centro sin alterar su orden: --1234--*/
+    /*flex-start: agrega los elementos desde la izquierda sin alterar su orden: 1234---*/
+    /*space-around: distribuye todos los elementos dentro del contenedor padre
+    dejando un espacio entre cada uno de ellos, también deja un espacio antes del primer
+    elemento y después del último elemento*/
+    /*space-between: lo mismo que space-around, pero sin el espacio antes del primer elemento
+    y sin el espacio después del último elemento*/
+
+}
+
+.elemento{
+    color: #fff;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background: #E67E22;
+    text-align: center;
+}
